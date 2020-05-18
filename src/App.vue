@@ -1,12 +1,20 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div class="box">
+    <h2 class="title is-5">Monthly Sales Chart</h2>
+    <monthly-sales-chart></monthly-sales-chart>
   </div>
 </template>
+
+<script>
+import MonthlySalesChart from "./components/MonthlySalesChart";
+
+export default {
+  name: "app",
+  components: {
+    MonthlySalesChart
+  }
+};
+</script>
 
 <style>
 #app {
